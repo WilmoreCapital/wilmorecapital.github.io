@@ -1,0 +1,26 @@
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <ul style="list-style-type: none">
+            <li class="item" style="display: inline; float: left">
+                <h1>{{ .Title }}</h1>
+                {{ if .Params.Subtitle }} 
+                    <h3>{{ .Params.Subtitle }}</h3>
+                {{ end }}
+                {{ if .Params.Phone }}
+                    <h4>{{ .Params.Phone }}</h4>
+                {{ end }}
+                {{ if .Params.Email }}
+                    <h4><a href="mailto:{{ .Params.Email }}">{{ .Params.Email }}</a></h4>
+                {{ end }}
+                {{ if .Params.Nmls }}
+                    <h4>NMLS #{{ .Params.Nmls }}</h4>
+                {{ end }}
+            </li>
+            <li class="item" style="display: inline; float: right">
+                {{ if .Params.ApplyUrl }}
+                    <h1><a href="{{ .Params.ApplyUrl }}">Apply with {{ .Params.First }}</a></h1>
+                {{ end }}
+            </li>
+        </ul>
+    </div>
+</div>
