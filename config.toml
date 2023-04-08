@@ -34,7 +34,7 @@ pluralizelisttitles = false
     name       = "Products"
     identifier = "menu.products"
     url        = "/products"
-    weight     = 1
+    weight     = 2
 
 [[menu.main]]
     name       = "Home Ownership"
@@ -49,10 +49,33 @@ pluralizelisttitles = false
     parent     = "menu.products"
 
 [[menu.main]]
+    name       = "Tools"
+    weight     = 3
+    identifier = "menu.tools"
+
+[[menu.main]]
+    name       = "Mortgage Calculator"
+    url        = "/tools/mortgage-calculator"
+    parent     = "menu.tools"
+    weight     = 1
+
+[[menu.main]]
+    name       = "Loan Estimate Explainer"
+    url        = "/tools/loan-estimate-explainer"
+    parent     = "menu.tools"
+    weight     = 2
+
+[[menu.main]]
+    name       = "Title Insurance"
+    url        = "/tools/title-insurance"
+    parent     = "menu.tools"
+    weight     = 3
+
+[[menu.main]]
     name       = "Team"
     identifier = "menu.team"
     url        = "/team"
-    weight     = 1
+    weight     = 4
 
 [[menu.main]]
     name       = "Cody Smart"
@@ -74,11 +97,11 @@ pluralizelisttitles = false
 
 # Top bar social links menu
 
-# [[menu.topbar]]
-#     weight = 1
-#     name = "Phone"
-#     url = "tel:+12 34 567 89 01"
-#     pre = "<i class='fas fa-2x fa-phone'></i>"
+[[menu.topbar]]
+    weight = 3
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/company/90713347"
+    pre = "<i class='fab fa-2x fa-linkedin'></i>"
 
 [[menu.topbar]]
     weight = 4
@@ -104,7 +127,7 @@ pluralizelisttitles = false
     default_sharing_image = "img/sharing-default.png"
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
-    enableGoogleMaps = true
+    enableGoogleMaps = false
     googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
 
     latitude = "-12.043333"
@@ -147,7 +170,7 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p>Wilmore Capital LLC<br />3046 Blantyre Bend<br />Round Rock, TX, 78664<br />NMLS #2474784<br />Residential Mortgage Loan Company</p>"
+    about_us = "<p>Wilmore Capital LLC<br />3046 Blantyre Bend<br />Round Rock, TX 78664<br />NMLS #2474784<br />Residential Mortgage Loan Company</p>"
     # copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
 
     # Format dates with Go's time formatting
@@ -163,6 +186,7 @@ pluralizelisttitles = false
     contact_url = "/contact"
     address = """<p class="text-uppercase"><strong>Wilmore Capital, LLC</strong>
         <br><a href="mailto:info@wilmorecapital.llc">info@wilmorecapital.llc</a>
+        <br><a href="tel:512-273-3526">512-273-3526</a>
       </p>
       """
 
@@ -172,7 +196,7 @@ pluralizelisttitles = false
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us at <a href="info@wilmorecapital.llc">info@wilmorecapital.llc.</a></p>"""
+    text = """<p class="hidden-sm hidden-xs">Contact us at <a href="mailto:info@wilmorecapital.llc">info@wilmorecapital.llc</a> or <a href="tel:512-273-3526">512-273-3526</a>.</p>"""
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
@@ -220,7 +244,7 @@ pluralizelisttitles = false
     enable = true
     icon = "far fa-file-alt"
     title = "Wilmore Capital, LLC"
-    subtitle = "Simple solutions for home owners and investors."
+    subtitle = "Simple solutions for home owners and investors.<br>[Apply Here](https://www.blink.mortgage/app/signup/p/wilmorecapitalllc)<br />[Borrower Log-in](https://www.blink.mortgage/app/login/partner/8XMSYCW7)"
 
 [params.clients]
     enable = true
@@ -235,6 +259,7 @@ pluralizelisttitles = false
     title = "Connect with us today to get started"
     subtitle = "We offer a wide range of products for home owners, fix/flip investors, rental investors, and more. View our product pages for more information and find your loan officer on the teams page."
     hide_summary = false
+    logo = "/img/wilmore-logo.jpg"
 
 [params.footer.recent_posts]
     enable = false
@@ -243,3 +268,6 @@ pluralizelisttitles = false
   category = "categories"
   tag = "tags"
   author = "authors"
+
+[markup.goldmark.renderer]
+  unsafe = true
