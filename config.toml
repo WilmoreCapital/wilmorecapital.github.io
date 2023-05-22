@@ -256,8 +256,8 @@ pluralizelisttitles = false
 
 [params.recent_posts]
     enable = true
-    title = "Connect with us today to get started"
-    subtitle = "We offer a wide range of products for home owners, fix/flip investors, rental investors, and more. View our product pages for more information and find your loan officer on the teams page."
+    title = "[Connect with us today to get started](https://calendly.com/wilmorecap/30min)"
+    subtitle = "Faster : Easier : Better<br />Find out how Wilmore can make finding a low rate home loan for Purchases and Refinances EASY"
     hide_summary = false
     logo = "/img/wilmore-logo.jpg"
 
