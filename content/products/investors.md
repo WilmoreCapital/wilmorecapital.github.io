@@ -11,7 +11,7 @@ _Low Documentation, Non-Owner Occupied, Investments Only_
   * 1-4 Unit Rental Properties
   * 5-8 Unit Rentals
 * Short Term Rentals (STRs)
-  * AirB&B or VRMO
+  * AirB&B or VRBO
   * Use AirDNA for rent approval
 
 #### Bridge Loans
