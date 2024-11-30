@@ -89,12 +89,6 @@ pluralizelisttitles = false
     weight     = 2
     parent     = "menu.team"
 
-[[menu.main]]
-    name       = "Greg Gottsacker"
-    url        = "/team/greg-gottsacker"
-    weight     = 3
-    parent     = "menu.team"
-
 # Top bar social links menu
 
 [[menu.topbar]]
@@ -205,7 +199,7 @@ pluralizelisttitles = false
     search = true
 
 [params.carouselCustomers]
-    items = 3
+    items = 2
     auto_play = false
     slide_speed = 2000
     pagination_speed = 1000
